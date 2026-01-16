@@ -1,0 +1,434 @@
+/* Columbia Colors */
+:root {
+    --columbia-blue: #B9D9EB;
+    --columbia-navy: #002B7F;
+    --columbia-dark: #001E5C;
+    --white: #ffffff;
+    --gray-50: #f9fafb;
+    --gray-100: #f3f4f6;
+    --gray-200: #e5e7eb;
+    --gray-300: #d1d5db;
+    --gray-600: #4b5563;
+    --gray-700: #374151;
+    --gray-800: #1f2937;
+    --gray-900: #111827;
+}
+
+/* Reset and Base */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--gray-800);
+    background: var(--white);
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.25rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.75rem;
+    color: var(--columbia-navy);
+    margin: 0 0 1.5rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--columbia-blue);
+}
+
+h3 {
+    font-size: 1.25rem;
+    color: var(--gray-700);
+    margin: 2rem 0 1rem 0;
+}
+
+p {
+    margin: 0 0 1rem 0;
+}
+
+a {
+    color: var(--columbia-navy);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, var(--columbia-navy) 0%, var(--columbia-dark) 100%);
+    color: var(--white);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+header h1 {
+    color: var(--white);
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.125rem;
+    color: var(--columbia-blue);
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+/* Navigation */
+nav {
+    background: var(--white);
+    border-bottom: 1px solid var(--gray-200);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav .container {
+    display: flex;
+    gap: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+nav a {
+    color: var(--gray-600);
+    font-weight: 500;
+    font-size: 0.9375rem;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: var(--columbia-navy);
+    text-decoration: none;
+}
+
+/* Main Content */
+main {
+    padding-bottom: 4rem;
+}
+
+section {
+    padding: 3rem 0;
+}
+
+section#about {
+    background: var(--gray-50);
+    border-bottom: 1px solid var(--gray-200);
+}
+
+section#about p {
+    font-size: 1.0625rem;
+    color: var(--gray-700);
+    max-width: 720px;
+}
+
+/* Badge */
+.badge {
+    display: inline-block;
+    background: var(--columbia-blue);
+    color: var(--columbia-navy);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    border-radius: 100px;
+    vertical-align: middle;
+    margin-left: 0.75rem;
+    font-family: 'Source Sans 3', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Event Details */
+.event-details {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: var(--gray-50);
+    border-radius: 8px;
+    border: 1px solid var(--gray-200);
+}
+
+.detail strong {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--gray-600);
+    margin-bottom: 0.25rem;
+}
+
+.detail span {
+    color: var(--gray-800);
+    font-size: 0.9375rem;
+    line-height: 1.5;
+}
+
+/* Schedule */
+.schedule {
+    border: 1px solid var(--gray-200);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.session-header {
+    background: var(--columbia-navy);
+    color: var(--white);
+    padding: 0.5rem 1.25rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.time-block {
+    display: flex;
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--gray-100);
+    gap: 1.5rem;
+}
+
+.time-block:last-child {
+    border-bottom: none;
+}
+
+.time-block.break {
+    background: var(--gray-50);
+}
+
+.time-block.break .event {
+    color: var(--gray-600);
+    font-style: italic;
+}
+
+.time {
+    flex-shrink: 0;
+    width: 100px;
+    font-size: 0.875rem;
+    color: var(--gray-600);
+    font-weight: 500;
+}
+
+.event {
+    flex-grow: 1;
+}
+
+.presenter {
+    font-weight: 600;
+    color: var(--gray-900);
+}
+
+.affiliation {
+    color: var(--gray-500);
+    font-size: 0.875rem;
+}
+
+.paper-title {
+    color: var(--gray-700);
+    font-size: 0.9375rem;
+    margin-top: 0.25rem;
+}
+
+/* Compact schedule for past years */
+.schedule.compact .time-block {
+    padding: 0.75rem 1.25rem;
+}
+
+.schedule.compact .session-header {
+    padding: 0.375rem 1.25rem;
+    font-size: 0.8125rem;
+}
+
+/* Year Section */
+.year-section {
+    background: var(--white);
+}
+
+/* Accordions for past years */
+.year-accordion {
+    border: 1px solid var(--gray-200);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.year-accordion summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.25rem;
+    cursor: pointer;
+    background: var(--white);
+    transition: background 0.2s;
+    list-style: none;
+}
+
+.year-accordion summary::-webkit-details-marker {
+    display: none;
+}
+
+.year-accordion summary::before {
+    content: '+';
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: var(--gray-400);
+    margin-right: 1rem;
+    transition: transform 0.2s;
+}
+
+.year-accordion[open] summary::before {
+    content: '-';
+}
+
+.year-accordion summary:hover {
+    background: var(--gray-50);
+}
+
+.year-title {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: var(--columbia-navy);
+}
+
+.year-date {
+    font-size: 0.875rem;
+    color: var(--gray-500);
+}
+
+.accordion-content {
+    padding: 0 1.25rem 1.25rem 1.25rem;
+    border-top: 1px solid var(--gray-100);
+}
+
+.accordion-content .location {
+    color: var(--gray-600);
+    font-size: 0.9375rem;
+    margin: 1rem 0;
+}
+
+.accordion-content .note {
+    color: var(--gray-500);
+    font-style: italic;
+    font-size: 0.875rem;
+}
+
+.accordion-content .schedule {
+    margin-top: 1rem;
+}
+
+/* Organizers */
+.organizers-section {
+    background: var(--columbia-navy);
+    color: var(--white);
+}
+
+.organizers-section h2 {
+    color: var(--white);
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+
+.organizers-intro {
+    color: var(--columbia-blue);
+    margin-bottom: 2rem;
+}
+
+.organizers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1rem;
+}
+
+.organizer {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.contact {
+    margin-top: 2rem;
+    color: var(--columbia-blue);
+    font-size: 0.9375rem;
+}
+
+/* Footer */
+footer {
+    background: var(--gray-900);
+    color: var(--gray-400);
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 640px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    header {
+        padding: 3rem 0;
+    }
+
+    nav .container {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .event-details {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .time-block {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .time {
+        width: auto;
+    }
+
+    .badge {
+        display: block;
+        margin: 0.5rem 0 0 0;
+    }
+
+    .organizers-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
