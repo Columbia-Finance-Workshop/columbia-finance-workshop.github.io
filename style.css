@@ -137,7 +137,7 @@ section {
 }
 
 section#about {
-    background: var(--gray-50);
+    background: var(--white);
     border-bottom: 1px solid var(--gray-200);
 }
 
