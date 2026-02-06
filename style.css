@@ -1,8 +1,11 @@
-/* Columbia Colors */
+/* CGSM Colors */
 :root {
-    --columbia-blue: #4A9BD9;
-    --columbia-navy: #002B7F;
-    --columbia-dark: #001E5C;
+    --cgsm-blue: #003366;
+    --cgsm-blue-dark: #002244;
+    --cgsm-gold: #AB9E51;
+    --columbia-blue: #AB9E51;
+    --columbia-navy: #003366;
+    --columbia-dark: #002244;
     --white: #ffffff;
     --gray-50: #f9fafb;
     --gray-100: #f3f4f6;
