@@ -1,11 +1,11 @@
 /* CGSM Colors */
 :root {
-    --cgsm-blue: #003366;
-    --cgsm-blue-dark: #002244;
+    --cgsm-blue: #5DADE2;
+    --cgsm-blue-dark: #3498DB;
     --cgsm-gold: #AB9E51;
-    --columbia-blue: #AB9E51;
-    --columbia-navy: #003366;
-    --columbia-dark: #002244;
+    --columbia-blue: #5DADE2;
+    --columbia-navy: #5DADE2;
+    --columbia-dark: #3498DB;
     --white: #ffffff;
     --gray-50: #f9fafb;
     --gray-100: #f3f4f6;
