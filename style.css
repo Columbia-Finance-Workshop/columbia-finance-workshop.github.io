@@ -82,26 +82,27 @@ a:hover {
 
 /* Header */
 header {
-    background: linear-gradient(135deg, var(--columbia-navy) 0%, var(--columbia-dark) 100%);
-    color: var(--white);
-    padding: 1.5rem 0;
+    background: var(--white);
+    border-bottom: 1px solid var(--gray-200);
+    padding: 1rem 0;
 }
 
 header .container {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 header img {
-    height: 50px;
+    height: 40px;
     margin: 0;
 }
 
 header h1 {
-    color: var(--white);
+    color: var(--gray-800);
     margin: 0;
-    font-size: 1.75rem;
+    font-size: 1.25rem;
+    font-weight: 500;
 }
 
 .subtitle {
