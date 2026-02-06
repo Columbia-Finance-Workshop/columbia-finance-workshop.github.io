@@ -1,11 +1,10 @@
-/* CGSM Colors */
+/* Colors */
 :root {
-    --cgsm-blue: #5DADE2;
-    --cgsm-blue-dark: #3498DB;
-    --cgsm-gold: #AB9E51;
-    --columbia-blue: #5DADE2;
-    --columbia-navy: #5DADE2;
-    --columbia-dark: #3498DB;
+    --primary-blue: #1a3a5c;
+    --primary-blue-light: #2d5a87;
+    --columbia-blue: #1a3a5c;
+    --columbia-navy: #1a3a5c;
+    --columbia-dark: #0f2840;
     --white: #ffffff;
     --gray-50: #f9fafb;
     --gray-100: #f3f4f6;
@@ -415,11 +414,12 @@ section#about p {
 
 /* Footer */
 footer {
-    background: var(--gray-900);
-    color: var(--gray-400);
-    padding: 2rem 0;
+    background: var(--white);
+    border-top: 1px solid var(--gray-200);
+    color: var(--gray-500);
+    padding: 1.5rem 0;
     text-align: center;
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
 }
 
 footer p {
